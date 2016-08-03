@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mike.wsnmonitor.NetworkOne">
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/add_node"
+        android:icon="@drawable/ic_action_new_light"
+        app:showAsAction="ifRoom"
+        android:title="@string/action_add">
+        <menu>
+            <item
+                android:id="@+id/action_add_sensor_node"
+                android:icon="@drawable/ic_action_new_dark"
+                app:showAsAction="never"
+                android:title="@string/action_add_sensor_node"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/add_picture"
+        android:icon="@drawable/ic_action_new_picture"
+        app:showAsAction="ifRoom"
+        android:title="@string/action_add">
+        <menu>
+            <item
+                android:id="@+id/action_device"
+                android:icon="@drawable/ic_action_folder"
+                app:showAsAction="never"
+                android:title="@string/action_device"/>
+
+            <item
+                android:id="@+id/action_camera"
+                android:icon="@drawable/ic_action_camera"
+                app:showAsAction="never"
+                android:title="@string/action_camera"/>
+        </menu>
+    </item>
+
+
+</menu>

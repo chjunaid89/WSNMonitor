@@ -1,0 +1,21 @@
+@startuml
+annotation java.lang.Override
+class android.content.Intent
+class android.os.Bundle
+class android.support.v7.app.ActionBarActivity
+class android.view.Menu
+class android.view.MenuItem
+class android.view.View
+class android.widget.ImageButton
+class android.widget.Toast
+class com.example.mike.wsnmonitor.MainActivity
+com.example.mike.wsnmonitor.MainActivity ..> java.lang.Override
+com.example.mike.wsnmonitor.MainActivity ..> android.content.Intent
+com.example.mike.wsnmonitor.MainActivity ..> android.os.Bundle
+com.example.mike.wsnmonitor.MainActivity --|> android.support.v7.app.ActionBarActivity
+com.example.mike.wsnmonitor.MainActivity ..> android.view.Menu
+com.example.mike.wsnmonitor.MainActivity ..> android.view.MenuItem
+com.example.mike.wsnmonitor.MainActivity ..> android.view.View
+com.example.mike.wsnmonitor.MainActivity ..> android.widget.ImageButton
+com.example.mike.wsnmonitor.MainActivity ..> android.widget.Toast
+@enduml

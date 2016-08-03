@@ -1,0 +1,176 @@
+@startuml
+annotation java.lang.Override
+class android.app.Activity
+class android.app.AlertDialog
+class android.app.Application
+class android.content.Context
+class android.content.DialogInterface
+class android.content.Intent
+class android.content.SharedPreferences
+class android.database.Cursor
+class android.graphics.Bitmap
+class android.graphics.BitmapFactory
+class android.graphics.drawable.BitmapDrawable
+class android.graphics.drawable.Drawable
+class android.media.AudioFormat
+class android.media.AudioManager
+class android.media.AudioRecord
+class android.media.MediaRecorder
+class android.net.Uri
+class android.os.AsyncTask
+class android.os.Build
+class android.os.Bundle
+class android.os.Handler
+class android.provider.MediaStore
+class android.support.v7.app.ActionBarActivity
+class android.support.v7.appcompat.R
+class android.test.ApplicationTestCase
+class android.util.Log
+class android.view.ContextMenu
+class android.view.GestureDetector
+class android.view.GestureDetector.SimpleOnGestureListener
+class android.view.LayoutInflater
+class android.view.Menu
+class android.view.MenuItem
+class android.view.MotionEvent
+class android.view.View
+class android.view.ViewGroup
+class android.widget.AdapterView
+class android.widget.BaseAdapter
+class android.widget.Button
+class android.widget.FrameLayout
+class android.widget.GridView
+class android.widget.ImageButton
+class android.widget.ImageView
+class android.widget.RelativeLayout
+class android.widget.TextView
+class android.widget.Toast
+class com.example.mike.wsnmonitor.ApplicationTest
+class com.example.mike.wsnmonitor.BuildConfig
+class com.example.mike.wsnmonitor.ImageAdapter
+class com.example.mike.wsnmonitor.MainActivity
+class com.example.mike.wsnmonitor.NetworkOne
+class com.example.mike.wsnmonitor.R
+class com.example.mike.wsnmonitor.SensorNode0
+class com.example.mike.wsnmonitor.Temperature
+class com.example.mike.wsnmonitor.test.BuildConfig
+class java.io.FileNotFoundException
+class java.io.IOException
+class java.util.ArrayList
+class java.util.Arrays
+class java.util.List
+class org.apache.http.NameValuePair
+class org.apache.http.client.ClientProtocolException
+class org.apache.http.client.HttpClient
+class org.apache.http.client.entity.UrlEncodedFormEntity
+class org.apache.http.client.methods.HttpPost
+class org.apache.http.impl.client.DefaultHttpClient
+class org.apache.http.message.BasicNameValuePair
+com.example.mike.wsnmonitor.ApplicationTest ..> android.app.Application
+com.example.mike.wsnmonitor.ApplicationTest --|> android.test.ApplicationTestCase
+com.example.mike.wsnmonitor.ImageAdapter ..> java.lang.Override
+com.example.mike.wsnmonitor.ImageAdapter ..> android.content.Context
+com.example.mike.wsnmonitor.ImageAdapter ..> android.view.LayoutInflater
+com.example.mike.wsnmonitor.ImageAdapter ..> android.view.View
+com.example.mike.wsnmonitor.ImageAdapter ..> android.view.ViewGroup
+com.example.mike.wsnmonitor.ImageAdapter --|> android.widget.BaseAdapter
+com.example.mike.wsnmonitor.ImageAdapter ..> android.widget.ImageView
+com.example.mike.wsnmonitor.ImageAdapter ..> android.widget.TextView
+com.example.mike.wsnmonitor.ImageAdapter ..> java.util.ArrayList
+com.example.mike.wsnmonitor.MainActivity ..> java.lang.Override
+com.example.mike.wsnmonitor.MainActivity ..> android.app.Activity
+com.example.mike.wsnmonitor.MainActivity ..> android.content.Context
+com.example.mike.wsnmonitor.MainActivity ..> android.content.Intent
+com.example.mike.wsnmonitor.MainActivity ..> android.content.SharedPreferences
+com.example.mike.wsnmonitor.MainActivity ..> android.database.Cursor
+com.example.mike.wsnmonitor.MainActivity ..> android.graphics.Bitmap
+com.example.mike.wsnmonitor.MainActivity ..> android.graphics.BitmapFactory
+com.example.mike.wsnmonitor.MainActivity ..> android.graphics.drawable.BitmapDrawable
+com.example.mike.wsnmonitor.MainActivity ..> android.graphics.drawable.Drawable
+com.example.mike.wsnmonitor.MainActivity ..> android.net.Uri
+com.example.mike.wsnmonitor.MainActivity ..> android.os.Build
+com.example.mike.wsnmonitor.MainActivity ..> android.os.Bundle
+com.example.mike.wsnmonitor.MainActivity ..> android.provider.MediaStore
+com.example.mike.wsnmonitor.MainActivity --|> android.support.v7.app.ActionBarActivity
+com.example.mike.wsnmonitor.MainActivity ..> android.util.Log
+com.example.mike.wsnmonitor.MainActivity ..> android.view.Menu
+com.example.mike.wsnmonitor.MainActivity ..> android.view.MenuItem
+com.example.mike.wsnmonitor.MainActivity ..> android.view.View
+com.example.mike.wsnmonitor.MainActivity ..> android.widget.Button
+com.example.mike.wsnmonitor.MainActivity ..> android.widget.ImageButton
+com.example.mike.wsnmonitor.MainActivity ..> android.widget.ImageView
+com.example.mike.wsnmonitor.MainActivity ..> android.widget.RelativeLayout
+com.example.mike.wsnmonitor.MainActivity ..> android.widget.Toast
+com.example.mike.wsnmonitor.MainActivity ..> java.io.FileNotFoundException
+com.example.mike.wsnmonitor.MainActivity ..> java.io.IOException
+com.example.mike.wsnmonitor.NetworkOne ..> java.lang.Override
+com.example.mike.wsnmonitor.NetworkOne ..> android.content.Intent
+com.example.mike.wsnmonitor.NetworkOne ..> android.content.SharedPreferences
+com.example.mike.wsnmonitor.NetworkOne ..> android.database.Cursor
+com.example.mike.wsnmonitor.NetworkOne ..> android.graphics.Bitmap
+com.example.mike.wsnmonitor.NetworkOne ..> android.graphics.drawable.BitmapDrawable
+com.example.mike.wsnmonitor.NetworkOne ..> android.graphics.drawable.Drawable
+com.example.mike.wsnmonitor.NetworkOne ..> android.net.Uri
+com.example.mike.wsnmonitor.NetworkOne ..> android.os.Build
+com.example.mike.wsnmonitor.NetworkOne ..> android.os.Bundle
+com.example.mike.wsnmonitor.NetworkOne ..> android.os.Handler
+com.example.mike.wsnmonitor.NetworkOne ..> android.provider.MediaStore
+com.example.mike.wsnmonitor.NetworkOne --|> android.support.v7.app.ActionBarActivity
+com.example.mike.wsnmonitor.NetworkOne ..> android.util.Log
+com.example.mike.wsnmonitor.NetworkOne ..> android.view.ContextMenu
+com.example.mike.wsnmonitor.NetworkOne ..> android.view.GestureDetector
+com.example.mike.wsnmonitor.NetworkOne ..> android.view.GestureDetector.SimpleOnGestureListener
+com.example.mike.wsnmonitor.NetworkOne ..> android.view.Menu
+com.example.mike.wsnmonitor.NetworkOne ..> android.view.MenuItem
+com.example.mike.wsnmonitor.NetworkOne ..> android.view.MotionEvent
+com.example.mike.wsnmonitor.NetworkOne ..> android.view.View
+com.example.mike.wsnmonitor.NetworkOne ..> android.widget.FrameLayout
+com.example.mike.wsnmonitor.NetworkOne ..> android.widget.ImageButton
+com.example.mike.wsnmonitor.NetworkOne ..> android.widget.Toast
+com.example.mike.wsnmonitor.NetworkOne ..> java.io.FileNotFoundException
+com.example.mike.wsnmonitor.NetworkOne ..> java.io.IOException
+com.example.mike.wsnmonitor.SensorNode0 ..> java.lang.Override
+com.example.mike.wsnmonitor.SensorNode0 ..> android.app.AlertDialog
+com.example.mike.wsnmonitor.SensorNode0 ..> android.content.DialogInterface
+com.example.mike.wsnmonitor.SensorNode0 ..> android.content.Intent
+com.example.mike.wsnmonitor.SensorNode0 ..> android.content.SharedPreferences
+com.example.mike.wsnmonitor.SensorNode0 ..> android.os.Bundle
+com.example.mike.wsnmonitor.SensorNode0 --|> android.support.v7.app.ActionBarActivity
+com.example.mike.wsnmonitor.SensorNode0 ..> android.view.ContextMenu
+com.example.mike.wsnmonitor.SensorNode0 ..> android.view.Menu
+com.example.mike.wsnmonitor.SensorNode0 ..> android.view.MenuItem
+com.example.mike.wsnmonitor.SensorNode0 ..> android.view.View
+com.example.mike.wsnmonitor.SensorNode0 ..> android.widget.AdapterView
+com.example.mike.wsnmonitor.SensorNode0 ..> android.widget.GridView
+com.example.mike.wsnmonitor.SensorNode0 ..> android.widget.TextView
+com.example.mike.wsnmonitor.SensorNode0 ..> android.widget.Toast
+com.example.mike.wsnmonitor.SensorNode0 ..> java.util.ArrayList
+com.example.mike.wsnmonitor.SensorNode0 ..> java.util.Arrays
+com.example.mike.wsnmonitor.Temperature ..> java.lang.Override
+com.example.mike.wsnmonitor.Temperature ..> android.content.Context
+com.example.mike.wsnmonitor.Temperature ..> android.content.Intent
+com.example.mike.wsnmonitor.Temperature ..> android.media.AudioFormat
+com.example.mike.wsnmonitor.Temperature ..> android.media.AudioManager
+com.example.mike.wsnmonitor.Temperature ..> android.media.AudioRecord
+com.example.mike.wsnmonitor.Temperature ..> android.media.MediaRecorder
+com.example.mike.wsnmonitor.Temperature ..> android.os.AsyncTask
+com.example.mike.wsnmonitor.Temperature ..> android.os.Bundle
+com.example.mike.wsnmonitor.Temperature ..> android.os.Handler
+com.example.mike.wsnmonitor.Temperature --|> android.support.v7.app.ActionBarActivity
+com.example.mike.wsnmonitor.Temperature ..> android.util.Log
+com.example.mike.wsnmonitor.Temperature ..> android.view.Menu
+com.example.mike.wsnmonitor.Temperature ..> android.view.MenuItem
+com.example.mike.wsnmonitor.Temperature ..> android.widget.TextView
+com.example.mike.wsnmonitor.Temperature ..> android.widget.Toast
+com.example.mike.wsnmonitor.Temperature ..> java.io.IOException
+com.example.mike.wsnmonitor.Temperature ..> java.util.ArrayList
+com.example.mike.wsnmonitor.Temperature ..> java.util.Arrays
+com.example.mike.wsnmonitor.Temperature ..> java.util.List
+com.example.mike.wsnmonitor.Temperature ..> org.apache.http.NameValuePair
+com.example.mike.wsnmonitor.Temperature ..> org.apache.http.client.ClientProtocolException
+com.example.mike.wsnmonitor.Temperature ..> org.apache.http.client.HttpClient
+com.example.mike.wsnmonitor.Temperature ..> org.apache.http.client.entity.UrlEncodedFormEntity
+com.example.mike.wsnmonitor.Temperature ..> org.apache.http.client.methods.HttpPost
+com.example.mike.wsnmonitor.Temperature ..> org.apache.http.impl.client.DefaultHttpClient
+com.example.mike.wsnmonitor.Temperature ..> org.apache.http.message.BasicNameValuePair
+@enduml

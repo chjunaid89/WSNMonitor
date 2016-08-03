@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mike.wsnmonitor">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NetworkOne"
+            android:label="@string/title_activity_network_one"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mike.wsnmonitor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SensorNode0"
+            android:label="@string/title_activity_sensor_node0"
+            android:parentActivityName=".NetworkOne">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mike.wsnmonitor.NetworkOne" />
+        </activity>
+        <activity
+            android:name=".Temperature"
+            android:label="@string/title_activity_temperature"
+            android:parentActivityName=".SensorNode0">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mike.wsnmonitor.SensorNode0" />
+        </activity>
+        <activity
+            android:name=".Bluetooth"
+            android:label="@string/title_activity_bluetooth"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mike.wsnmonitor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".WSNControl"
+            android:label="@string/title_activity_wsncontrol"
+            android:parentActivityName=".NetworkOne"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mike.wsnmonitor.NetworkOne" />
+        </activity>
+        <activity
+            android:name=".SensorNode0Internet"
+            android:label="@string/title_activity_sensor_node0_internet"
+            android:parentActivityName=".NetworkOne"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mike.wsnmonitor.NetworkOne" />
+        </activity>
+        <activity
+            android:name=".TemperatureInternet"
+            android:label="@string/title_activity_temperature_internet"
+            android:parentActivityName=".SensorNode0Internet"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mike.wsnmonitor.SensorNode0Internet" />
+        </activity>
+        <activity
+            android:name=".HumidityInternet"
+            android:label="@string/title_activity_humidity_internet"
+            android:parentActivityName=".SensorNode0Internet"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mike.wsnmonitor.SensorNode0Internet" />
+        </activity>
+        <activity
+            android:name=".AirPressureInternet"
+            android:label="@string/title_activity_air_pressure_internet"
+            android:parentActivityName=".SensorNode0Internet"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mike.wsnmonitor.SensorNode0Internet" />
+        </activity>
+        <activity
+            android:name=".LightIntensityInternet"
+            android:label="@string/title_activity_light_intensity_internet"
+            android:parentActivityName=".SensorNode0Internet"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mike.wsnmonitor.SensorNode0Internet" />
+        </activity>
+        <activity
+            android:name=".VibrationInternet"
+            android:label="@string/title_activity_vibration_internet"
+            android:parentActivityName=".SensorNode0Internet"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mike.wsnmonitor.SensorNode0Internet" />
+        </activity>
+        <activity
+            android:name=".AccelerationInternet"
+            android:label="@string/title_activity_acceleration_internet"
+            android:parentActivityName=".SensorNode0Internet"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mike.wsnmonitor.SensorNode0Internet" />
+        </activity>
+    </application>
+
+</manifest>
